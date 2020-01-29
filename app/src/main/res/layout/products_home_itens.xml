@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/img_item_product"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/banner"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_description"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/img_item_product"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:text="iPhone 8 Cinza Espacial, com Tela de 4,7”, 4G, 64 GB e Câmera de 12 MP - MQ6G2BR/A"/>
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="3.000,00"
+        android:layout_toRightOf="@id/img_item_product"
+        android:layout_below="@id/tv_item_description"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#658e31"
+        />
+
+</RelativeLayout>

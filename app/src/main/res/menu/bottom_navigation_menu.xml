@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/products"
+        android:title="Produtos"
+        android:icon="@drawable/ic_dehaze_black_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/shoppingCart"
+        android:title="Carrinho"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/favorites"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/support"
+        android:title="Atendimento"
+        android:icon="@drawable/ic_headset_mic_black_24dp"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/toolbarBackground"
+    android:padding="20dp"
+    tools:context=".ui.activities.SearchActivity">
+
+    <RelativeLayout
+        android:transitionName="search_container_transition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/search_background"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/searchIcon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_toRightOf="@id/searchIcon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_text"
+            android:background="@null"
+            android:maxLines="1"
+            >
+            <requestFocus/>
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/voice"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_voice_black_24dp"
+            android:gravity="end"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
